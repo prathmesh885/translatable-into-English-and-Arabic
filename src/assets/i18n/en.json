@@ -1,0 +1,22 @@
+{
+  "dir": "ltr",
+  "Navbar": "Navbar",
+
+    "CRNumber": "CR Number",
+    "Status": "Status",
+    "AgencyName": "Agency Name",
+    "EshtablishmentID": "Eshtablishment ID",
+    "CustomersCode": "Customers Code",
+    "CreationDateFrom": "Creation Date From",
+    "CreationDateTo": "Creation Date To",
+    "ClearingAgencyType": "Clearing Agency Type",
+    "Home": "Home",
+    "ContactUs": "ContactUs",
+    "Logout": "Logout",
+    "News":"News",
+    "Contact":"Contact",
+    "About":"About",
+    "ApproveClearingAgency":"Approve Clearing Agency",
+    "SearchCriteria":"Search Criteria"
+  
+}

@@ -1,0 +1,23 @@
+{
+  "dir": "rtl",
+  "Navbar": "شريط التنقل",
+  
+    "CRNumber": "رقم السجل التجاري",
+    "Status": "حالة",
+    "AgencyName": "اسم الوكالة",
+    "EshtablishmentID": "معرف التأسيس",
+    "CustomersCode": "كود العملاء",
+    "CreationDateFrom": "تاريخ الإنشاء من",
+    "CreationDateTo": "تاريخ الإنشاء إلى",
+    "ClearingAgencyType": "نوع وكالة المقاصة",
+    
+    "Home": "بيت",
+    "ContactUs": "اتصل بنا",
+    "Logout": "تسجيل خروج",
+    "News":"أخبار",
+    "Contact":"اتصال",
+    "About":"عن",
+    "ApproveClearingAgency":"الموافقة على وكالة المقاصة",
+    "SearchCriteria":"معايير البحث"
+  }
+

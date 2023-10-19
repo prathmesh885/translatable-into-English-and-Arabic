@@ -1,0 +1,131 @@
+<div class="layout" [dir]="'dir'| translate">
+  <div class="nav navbar-expand-lg navbar-light">
+    <div class="container">
+      <a href="L" class="navbar-brand text-white">translatable into English and Arabic</a>
+    </div>
+    <select name="" id="" class="bg-danger" (change)="translate($event)">
+      <option value="en" >English</option>
+      <option value="ar">Arabic</option>
+    </select>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="#">{{'Navbar' | translate }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">{{'Home' | translate }}<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">{{'ContactUs' | translate }}</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">{{'Logout' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<div>
+  <div class="sidebar" [dir]="'dir'| translate">
+    <a class="active" href="#home">{{'Home' | translate }}</a>
+    <a href="#news">{{'News' | translate }}</a>
+    <a href="#contact"> {{'Contact' | translate }}</a>
+    <a href="#about">{{'About' | translate }}</a>
+  </div>
+
+  <!-- Table content -->
+  <div class="content" [dir]="'dir'| translate">
+    <div class="container mt-4">
+      <div class="alert alert-dark" role="alert">
+        <h5> {{'ApproveClearingAgency' | translate }}</h5>
+      </div>
+      <h5 class="text-danger">{{'SearchCriteria' | translate }}</h5>
+      <hr>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">{{'CRNumber' | translate }}</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">{{'Status' | translate }}</label>
+            <select id="inputState" class="form-control">
+              <option selected>--Select One--</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">{{'AgencyName' | translate }}</label>
+            <input type="name" class="form-control" id="inputPassword4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">{{'EshtablishmentID' | translate }}</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress">{{'CustomersCode' | translate }}</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">{{'CreationDateFrom' | translate }}</label>
+            <input type="date" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">{{'CreationDateTo' | translate }}</label>
+            <input type="date" class="form-control" id="inputPassword4">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">{{'ClearingAgencyType' | translate }}</label>
+            <select id="inputState" class="form-control">
+              <option selected>--All--</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div class="alert alert-dark" role="alert">
+        <button class="m-2">Search</button>
+        <button>Reset</button>
+      </div>
+
+      <h5 class="text-danger">Search Results</h5>
+      <hr>
+      <table class="table table-striped table-bordered table-sm row-border hover" id="datatableexample">
+        <thead class="thead-dark">
+          <tr>
+            <th>Eshtablishment ID</th>
+            <th>CR Number</th>
+            <th>Customers Code</th>
+            <th>Agency Name</th>
+            <th>Status</th>
+            <th>Creation Date</th>
+            <th>Clearing Agenct Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let group of data">
+            <td>{{group.id}}</td>
+            <td></td>
+            <td>{{group.address.suite}}</td>
+            <td>{{group.address.city}}</td>
+            <td>{{group.address.geo.lat}}</td>
+            <td>{{group.address.geo.lng}}</td>
+            <td>{{group.company.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+ 
